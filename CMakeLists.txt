@@ -16,11 +16,6 @@ include(cmake/CcpMonolithVendorConfig.cmake)
 ccp_add_library(destiny MODULE)
 target_link_libraries(destiny PUBLIC Blue CcpCore PRIVATE CcpMath)
 
-set(PUBLIC_HEADER_FILES_INCLUDE
-    include/IEveReferencePoint.h
-    include/IEveBallpark.h
-)
-
 set(_SOURCES
     src/AABB.cpp
     src/AABB.h
